@@ -1,6 +1,6 @@
 /* Color */
 $color-main: #283593;
-$color-text: #000;
+$color-text: rgba(0, 0, 0, .87);
 $color-title: #484848;
 $color-btn-text: #fff;
 // Color button
@@ -9,6 +9,18 @@ $color-btn-bg-hover: #9874B8;
 $color-btn-bg-focus: #8767A3;
 // Color background
 $color-bg-main: #f7f7f7;
+// Color cards
+$color-type1: #697996;
+$color-type2: #9354A0;
+$color-type3: #783D84;
+$color-type4: #662574;
+$color-type5: #D8C08A;
+$color-type6: #9EC4C3;
+
+$color-company1: #697996;
+$color-company2: #8E6996;
+$color-company3: #D8C08A;
+$color-company4: #9EC4C3;
 
 /* Fonts */
 $font-main: Roboto, sans-serif;
@@ -18,3 +30,4 @@ $font-title: Avenir, sans-serif;
 $header: '.header';
 $btn: '.btn';
 $footer: '.footer';
+$cards: '.cards';

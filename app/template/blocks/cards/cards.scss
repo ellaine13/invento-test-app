@@ -1,0 +1,127 @@
+#{$cards} {
+
+    &__list {
+        @include list-reset;
+        font-size: 0;
+
+        @media screen and (min-width: 768px) {
+            margin: 0 -8px;
+        }
+    }
+
+    &__item {
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
+        margin-bottom: 2.143em;
+        font-size: 14px;
+
+        @media screen and (min-width: 768px) {
+            width: 50%;
+        }
+
+        @media screen and (min-width: 1024px) {
+            width: 33.33333%;
+        }
+    }
+
+    &__box {
+        border-radius: 2px;
+        background: #fff;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.13);
+
+        @media screen and (min-width: 768px) {
+            margin-right: 8px;
+            margin-left: 8px;
+        }
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        padding: 16px;
+    }
+
+    &__avatar {
+        width: 40px;
+        height: 40px;
+        margin-right: .86em;
+        border-radius: 50%;
+
+        #{$cards}__item_company1 & {
+            background-color: $color-company1;
+        }
+
+        #{$cards}__item_company2 & {
+            background-color: $color-company2;
+        }
+
+        #{$cards}__item_company3 & {
+            background-color: $color-company3;
+        }
+
+        #{$cards}__item_company4 & {
+            background-color: $color-company4;
+        }
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 1.143em;
+        line-height: 1.1874;
+        color: rgba(31, 31, 31, 0.87);
+    }
+
+    &__subtitle {
+        font-weight: 500;
+        font-size: .93em;
+        color: rgba(0, 0, 0, 0.54);
+    }
+
+    &__picture {
+        height: 192px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+
+        #{$cards}__item_type1 & {
+            background-color: $color-type1;
+        }
+
+        #{$cards}__item_type2 & {
+            background-color: $color-type2;
+        }
+
+        #{$cards}__item_type3 & {
+            background-color: $color-type3;
+        }
+
+        #{$cards}__item_type4 & {
+            background-color: $color-type4;
+        }
+
+        #{$cards}__item_type5 & {
+            background-color: $color-type5;
+        }
+
+        #{$cards}__item_type6 & {
+            background-color: $color-type6;
+        }
+    }
+
+    &__content {
+        padding: 1.143em 2.9em 1.143em 1.143em;
+    }
+
+    &__footer {
+        padding: .5715em;
+
+        #{$btn} {
+            margin-right: 5px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}

@@ -2,6 +2,7 @@ block variables
 
 include mixins/bemto/bemto.pug
 include blocks/btn/btn.pug
+include blocks/cards/cards.pug
 
 doctype html
 html(lang="en")
@@ -48,7 +49,7 @@ html(lang="en")
 		.wrapper
 			include blocks/header/header.pug
 
-			.content
+			main.content
 				block content
 
 			include blocks/footer/footer.pug

@@ -1,0 +1,30 @@
+mixin cards(data)
+    +b('div').cards
+        +e('ul').list
+            each item in data.list
+                +e('li').item(class= item.mods)
+                    +e('section').box
+                        +e('header').header
+                            +e('div').avatar
+
+                            +e('div').caption
+                                +e('h2').title= item.title
+
+                                +e('div').subtitle= item.subtitle
+
+                        +e('div').picture
+
+                        +e('div').content= item.content
+
+                        +e('footer').footer
+                            +btn({
+                                mods: '_alt',
+                                type: 'button',
+                                text: 'Action 1'
+                            })
+
+                            +btn({
+                                mods: '_alt',
+                                type: 'button',
+                                text: 'Action 2'
+                            })
