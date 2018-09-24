@@ -1,0 +1,36 @@
+#{$btn} {
+	display: inline-block;
+	padding: .7em 1.1em .5em;
+	border: 0;
+	border-radius: .143em;
+	font-weight: 500;
+	font-size: 1em;
+	background: $color-btn-bg-default;
+	cursor: pointer;
+	color: $color-btn-text;
+	transition: all .3s ease;
+
+	&:hover {
+		background: $color-btn-bg-hover;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, .24);
+	}
+
+	&:focus {
+		outline: none;
+		background: $color-btn-bg-focus;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, .31);
+	}
+
+	&:active {
+		box-shadow: none;
+	}
+
+	&_add span:before {
+		content: '\FF0B';
+		display: inline-block;
+		vertical-align: text-top;
+		margin-right: 3px;
+		font-size: 1.2em;
+		line-height: 1.2;
+	}
+}

@@ -1,0 +1,30 @@
+{	
+	"parserOptions": {
+		"ecmaVersion": 6,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	},
+	"env": {
+		"browser": true
+	},
+	"extends": "eslint:recommended",
+	"rules": {
+		"no-console": 0,
+		"indent": [2, "tab"],
+		"quotes": [2, "single"],
+		"semi": [2, "always"]
+	},
+	"globals": {
+		"$": false,
+		"jQuery": false,
+		"noUiSlider": false,
+		"wNumb": false,
+		"module": false,
+		"process": false,
+		"global": false,
+		"require": false,
+		"baguetteBox'": false
+	}
+}

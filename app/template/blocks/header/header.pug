@@ -1,0 +1,11 @@
++b('header').header
+	+e('h1').title Products
+
+	+btn({
+		mods: '_add header__btn',
+		type: 'button',
+		text: 'Add new'
+	})
+
+	+e('input').input.input_search(type="search", placeholder="Search", title="Search", required)
+

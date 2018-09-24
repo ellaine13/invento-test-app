@@ -1,0 +1,7 @@
+mixin btn(data)
+	if data.link
+		+b('a').btn(href= data.link, class= data.mods)
+			span= data.text
+	else
+		+b('button').btn(type= data.type, class= data.mods)
+			span= data.text

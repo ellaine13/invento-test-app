@@ -1,0 +1,40 @@
+{
+	"name": "invento-test-app",
+	"version": "0.1.0",
+	"author": "mikalai.harbunou",
+	"license": "MIT",
+	"url": "git@github.com:ellaine13/invento-test-app.git",
+	"scripts": {
+		"build": "NODE_ENV=production gulp build",
+		"start": "gulp"
+	},
+	"devDependencies": {
+		"babel-core": "^6.25.0",
+		"babel-preset-env": "^1.6.0",
+		"babel-preset-stage-0": "^6.24.1",
+		"browser-sync": "^2.11.2",
+		"gulp": "git+https://git@github.com/gulpjs/gulp.git#4.0",
+		"gulp-autoprefixer": "^3.1.0",
+		"gulp-babel": "^6.1.2",
+		"gulp-cli": "gulpjs/gulp-cli",
+		"gulp-concat": "^2.6.0",
+		"gulp-concat-css": "^2.2.0",
+		"gulp-csso": "^2.0.0",
+		"gulp-eslint": "^2.0.0",
+		"gulp-if": "^2.0.2",
+		"gulp-load-plugins": "^1.2.0",
+		"gulp-notify": "^2.2.0",
+		"gulp-plumber": "^1.1.0",
+		"gulp-pug": "^3.0.3",
+		"gulp-sass": "^3.1.0",
+		"gulp-sourcemaps": "^1.6.0",
+		"gulp-uglify": "^3.0.0",
+		"gulp-util": "^3.0.8",
+		"rimraf": "^2.5.2",
+		"vinyl-ftp": "^0.6.0"
+	},
+	"dependencies": {
+		"jquery": "^3.1.1",
+		"normalize.css": "^4.1.1"
+	}
+}
