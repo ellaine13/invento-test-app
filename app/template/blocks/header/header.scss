@@ -1,6 +1,11 @@
 #{$header} {
 	width: 100%;
 	@include clearfix;
+	margin-bottom: 1.215em;
+
+	@media screen and (min-width: 768px) {
+		margin-bottom: 1.715em;
+	}
 
 	&__title {
 		display: inline-block;
