@@ -1,6 +1,6 @@
 #{$btn} {
 	display: inline-block;
-	padding: .7em 1.1em .5em;
+	padding: .65em 1.1em .5em;
 	border: 0;
 	border-radius: .143em;
 	font-weight: 500;
@@ -32,5 +32,29 @@
 		margin-right: 3px;
 		font-size: 1.2em;
 		line-height: 1.2;
+	}
+
+	&_alt {
+		padding-left: .585em;
+		padding-right: .585em;
+		line-height: 1.358;
+		text-transform: uppercase;
+		background: none;
+		color: #4D4D4D;
+
+		&:hover {
+			background: none;
+			box-shadow: none;
+			color: $color-text;
+		}
+
+		&:focus {
+			background: none;
+			box-shadow: none;
+		}
+
+		&:active {
+			color: #000;
+		}
 	}
 }
