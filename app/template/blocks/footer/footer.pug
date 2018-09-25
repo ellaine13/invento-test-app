@@ -1,2 +1,22 @@
 +b('footer').footer
-	p footer
+	+pagination({
+		list: [
+			{
+				isActive: true,
+				control: '1'
+			},
+			{
+				control: '2'
+			},
+			{
+				control: '3'
+			},
+			{
+				control: '4'
+			},
+			{
+				next: true,
+				control: 'Next page'
+			}
+		]
+	})

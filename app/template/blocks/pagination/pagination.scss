@@ -1,0 +1,87 @@
+#{$pagination} {
+    font-family: $font-additional;
+
+    &__list {
+        @include list-reset;
+        display: flex;
+        justify-content: center;
+
+        @media screen and (min-width: 1024px) {
+            justify-content: flex-end;
+        }
+    }
+
+    &__item {
+
+        &.next {
+
+            #{$pagination}__control {
+                padding-right: 1.572em;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    right: 12px;
+                    width: 0;
+                    height: 0;
+                    margin-top: -2px;
+                    border-style: solid;
+                    border-width: 3px 0 3px 5px;
+                    border-color: transparent transparent transparent rgba(0, 0, 0, .71);
+                }
+            }
+        }
+
+        &:last-child {
+            #{$pagination}__control {
+                @media screen and (min-width: 1024px) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    &__control {
+        position: relative;
+        min-width: 34px;
+        height: 34px;
+        margin: 0 4px;
+        padding: .5em .925em;
+        line-height: 1.36em;
+        text-align: center;
+        border: 0;
+        background: #EEE4F0;
+        color: #3c3c3c;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, .16);
+        cursor: pointer;
+        transition: all .3s ease;
+
+        &:hover {
+            background: #e3d0e6;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, .16);
+        }
+
+        &:focus {
+            background: #d1bfd4;
+            outline: none;
+        }
+
+        &:active {
+            box-shadow: none;
+        }
+
+        #{$pagination}__item.is-active & {
+            background: #fff;
+            cursor: text;
+        }
+
+        #{$pagination}__item.is-active:hover & {
+            box-shadow: 0 1px 1px rgba(0, 0, 0, .16);
+        }
+
+        #{$pagination}__item.is-active:active & {
+            box-shadow: 0 1px 1px rgba(0, 0, 0, .16);
+        }
+    }
+}

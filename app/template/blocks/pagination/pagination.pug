@@ -1,0 +1,6 @@
+mixin pagination(data)
+    +b('div').pagination
+        +e('ul').list
+            each item in data.list
+                +e('li').item(class= item.isActive ? 'is-active' : '', class= item.next ? 'next' : '')
+                    +e('button').control= item.control
